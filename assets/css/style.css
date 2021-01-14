@@ -47,6 +47,7 @@
   bottom: 0;
   top: 74px;
   left: 0;
+  display: flex;
   justify-content: space-between;
   line-height: 3;
   background: white;
@@ -190,7 +191,6 @@
     display: none;
   }
   .active {
-    display: flex;
     transform: scale(1);
   }
   .order-primary {

@@ -45,6 +45,7 @@ $bacground: #f6f6f6;
   bottom: 0;
   top: 74px;
   left: 0;
+  display: flex;
   justify-content: space-between;
   line-height: 3;
   background: white;
@@ -55,7 +56,6 @@ $bacground: #f6f6f6;
   width: 100%;
   transform: scaleX(0);
   transform-origin: right;
-  // overflow-x: hidden;
 
   .items-toggle {
     font-size: 24px;
@@ -157,7 +157,6 @@ $bacground: #f6f6f6;
   font-weight: bold;
 }
 .block-scroll {
-  // overflow-x: hidden;
   overflow: hidden;
   height: 100%;
   position: relative;
@@ -172,8 +171,6 @@ $bacground: #f6f6f6;
     display: none;
   }
   .active {
-    display: flex;
-    // width: 100%;
     transform: scale(1);
   }
   .order-primary {

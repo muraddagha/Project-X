@@ -51,10 +51,11 @@ $bacground: #f6f6f6;
   flex-direction: column;
   z-index: 1;
   transition: 0.8s;
-  height: 90%;
+  height: calc(100%-74px);
   width: 100%;
   transform: scaleX(0);
   transform-origin: right;
+  overflow-x: hidden;
 
   .items-toggle {
     font-size: 24px;
@@ -155,14 +156,17 @@ $bacground: #f6f6f6;
 .text-bold {
   font-weight: bold;
 }
-.modal-openn {
-  overflow-y: hidden;
+.block-scroll {
+  // overflow-x: hidden;
   overflow: hidden;
+  height: 100%;
+  position: relative;
 }
 
 @media only screen and (max-width: 992px) {
   .navbar .navbar-toggle {
     display: flex;
+    justify-content: space-between;
   }
   .navbar .navbar-items {
     display: none;

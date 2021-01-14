@@ -53,10 +53,11 @@
   flex-direction: column;
   z-index: 1;
   transition: 0.8s;
-  height: 90%;
+  height: calc(100%-74px);
   width: 100%;
   transform: scaleX(0);
   transform-origin: right;
+  overflow-x: hidden;
 }
 
 .toggle-menu .items-toggle {
@@ -175,14 +176,16 @@
   font-weight: bold;
 }
 
-.modal-openn {
-  overflow-y: hidden;
+.block-scroll {
   overflow: hidden;
+  height: 100%;
+  position: relative;
 }
 
 @media only screen and (max-width: 992px) {
   .navbar .navbar-toggle {
     display: flex;
+    justify-content: space-between;
   }
   .navbar .navbar-items {
     display: none;

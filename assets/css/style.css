@@ -172,6 +172,10 @@
   background-color: #f6f6f6;
 }
 
+.mt-mine {
+  margin-top: 1.5rem;
+}
+
 .text-bold {
   font-weight: bold;
 }
@@ -180,6 +184,10 @@
   overflow: hidden;
   height: 100%;
   position: relative;
+}
+
+.line-normal {
+  line-height: normal;
 }
 
 @media only screen and (max-width: 992px) {
@@ -210,6 +218,9 @@
   }
   .footer-adress {
     line-height: 1.5;
+  }
+  .mt-mine {
+    margin-top: 11px;
   }
 }
 

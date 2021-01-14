@@ -152,6 +152,9 @@ $bacground: #f6f6f6;
 .bg-basis {
   background-color: $bacground;
 }
+.mt-mine {
+  margin-top: 1.5rem;
+}
 
 .text-bold {
   font-weight: bold;
@@ -160,6 +163,9 @@ $bacground: #f6f6f6;
   overflow: hidden;
   height: 100%;
   position: relative;
+}
+.line-normal {
+  line-height: normal;
 }
 
 @media only screen and (max-width: 992px) {
@@ -192,6 +198,9 @@ $bacground: #f6f6f6;
   }
   .footer-adress {
     line-height: 1.5;
+  }
+  .mt-mine {
+    margin-top: 11px;
   }
 }
 @media only screen and(max-width: 392px) {

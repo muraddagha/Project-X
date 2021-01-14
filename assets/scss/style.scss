@@ -45,10 +45,14 @@ $bacground: #f6f6f6;
   display: none;
   position: fixed;
   background: white;
-  width: 100%;
+  /* width: 100%; */
   left: 0;
   z-index: 111;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
+  transition: 0.5s;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   .items-toggle {
     list-style: none;
@@ -163,7 +167,8 @@ $bacground: #f6f6f6;
     display: none;
   }
   .active {
-    display: block;
+    display: inline-block;
+    width: 100%;
   }
   .order-primary {
     order: 1;

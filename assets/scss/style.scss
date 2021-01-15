@@ -19,6 +19,36 @@ $bacground: #f6f6f6;
     .items {
       display: contents;
       list-style: none;
+      .droppdown {
+        position: relative;
+        .droppdown-content {
+          width: 200px;
+          transform: scaleY(0);
+          transform-origin: top;
+          transition: 0.3s;
+          background-color: white;
+          position: absolute;
+          list-style: none;
+          padding: 1rem;
+          margin: 0 10px;
+
+          li {
+            padding: 10px;
+            &:hover {
+              background-color: #f4f5f8;
+            }
+          }
+        }
+        &:hover .droppdown-content {
+          transform: scale(1);
+        }
+        .about {
+          left: -60%;
+        }
+        .client {
+          left: -60%;
+        }
+      }
       .links {
         color: #4c585d;
         cursor: pointer;

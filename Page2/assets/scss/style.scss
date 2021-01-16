@@ -21,27 +21,7 @@ $bacground: #f6f6f6;
       list-style: none;
       .droppdown {
         position: relative;
-        &:hover {
-          #underline:after {
-            width: 100%;
-            opacity: 1;
-            left: 0;
-          }
-        }
-        #underline {
-          &::after {
-            content: "";
-            width: 0;
-            position: absolute;
-            border: 1px solid #ee4248;
-            bottom: 0;
-            right: 0;
-            transform-origin: center;
-            opacity: 0;
-            transition: 0.3s;
-            transition-timing-function: ease-out;
-          }
-        }
+
         .droppdown-content {
           width: 200px;
           transform: scaleY(0);
@@ -74,10 +54,33 @@ $bacground: #f6f6f6;
       .links {
         color: #4c585d;
         cursor: pointer;
+        position: relative;
+        &:hover {
+          #underline:after {
+            width: 100%;
+            opacity: 1;
+            left: 0;
+          }
+        }
+        #underline {
+          &::after {
+            content: "";
+            width: 0;
+            position: absolute;
+            border: 1px solid #ee4248;
+            bottom: 0;
+            right: 0;
+            transform-origin: center;
+            opacity: 0;
+            transition: 0.3s;
+            transition-timing-function: ease-out;
+          }
+        }
 
         a {
           text-decoration: none;
           color: #4c585d;
+          cursor: pointer;
         }
         i {
           margin-left: 5px;
